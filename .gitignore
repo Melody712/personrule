@@ -28,4 +28,5 @@ bin/
 资源/
 输出/
 报告/
-*/xom-libraries/*
+xom-libraries/
+\346\212\245\345\221\212/
