@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><teamservers>
+<teamserver>
+<target dataSource="" login="rtsAdmin" url="http://localhost:9080/teamserver"/>
+<entry baseType="B2XMapping" checksum="516056540" projectName="personRule" qualifiedName="person" sourceCS="9BE67979C2D4FC1AE10161B947226AC0" targetCS="516056540" type="B2XMapping" uuid="674c73f5-42a4-44a3-98f3-8fad7ea65ba4"/>
+<entry baseType="BusinessObjectModel" checksum="516056540" projectName="personRule" qualifiedName="person" sourceCS="CBBC3AC6B7A6255DB77B7753B084A4C4" targetCS="516056540" type="BusinessObjectModel" uuid="d89d8845-e281-4b2c-8040-23bcf8d19c9e"/>
+<entry baseType="DecisionOperation" checksum="2258556412" projectName="personRule" qualifiedName="person决策操作" sourceCS="201D85F614953775477C52455D9827B6" targetCS="2258556412" type="DecisionOperation" uuid="c1c9bcc6-b301-4012-a158-deb9d1de9a51"/>
+<entry baseType="DeploymentConfiguration" checksum="1186393202" projectName="personRule" qualifiedName="person部署配置" sourceCS="2CA1D03C46DB6288C32F80E656816B11" targetCS="1186393202" type="DeploymentConfiguration" uuid="446aed2b-ca4d-466d-b3d6-89641e069e4e"/>
+<entry baseType="Resource" checksum="1297512001" projectName="personRule" qualifiedName="xom-libraries/person-xom.zip" sourceCS="1F4F21D4606928FC14EC246FFE99452E" targetCS="1297512001" type="Resource" uuid="xom-libraries/person-xom.zip"/>
+<entry baseType="Ruleflow" checksum="4225264527" projectName="personRule" qualifiedName="personCheck" sourceCS="B892D86A439435FEE36F2A68B68DB62E" targetCS="4225264527" type="Ruleflow" uuid="51c5ddc0-79c9-4f2b-aa76-d573ba6e9929"/>
+<entry baseType="RulePackageInfo" checksum="390799213" projectName="personRule" qualifiedName="checkAge" sourceCS="EE3224E6A692698356EBE27B91B4435D" targetCS="390799213" type="RulePackageInfo" uuid="417a7ad0-94ec-4155-a9df-541200fb4737"/>
+<entry baseType="RulePackageInfo" checksum="1507419688" projectName="personRule" qualifiedName="checkSex" sourceCS="CB71E2385742288CDD5BAD16A7495C18" targetCS="1507419688" type="RulePackageInfo" uuid="2752da0f-da35-4a24-8cb8-3e4b18404a71"/>
+<entry baseType="RuleProjectInfo" checksum="118418977" projectName="personRule" qualifiedName="personRule" sourceCS="DB54A68746A2CE09CB3989C6A65FDED4" targetCS="118418977" type="RuleProjectInfo" uuid="a131255b-88ba-480b-839b-d4abc595de23"/>
+<entry baseType="VariableSet" checksum="1534464172" projectName="personRule" qualifiedName="人员变量集" sourceCS="0CC48924C9CA1096ED619DA822DF8D6A" targetCS="1534464172" type="VariableSet" uuid="a1ea3744-ea51-49f2-8b8f-779b830414e6"/>
+<entry baseType="Vocabulary" checksum="516056540" projectName="personRule" qualifiedName="person_zh_CN" sourceCS="C0BA09978D779D93FFF008225D083464" targetCS="516056540" type="Vocabulary" uuid="c6adddc0-53f4-4054-8d23-70500181b9d6"/>
+</teamserver>
+</teamservers>

@@ -1,0 +1,15 @@
+package checkAge {
+   use person;
+   rule 年龄检查 {
+      property ilog.rules.business_name = "年龄检查";
+      property ilog.rules.package_name = "checkAge";
+      property status = "new";
+      when {
+         bean.Person() from person;
+         evaluate (person.age < 18);
+      } then {
+         person.msg = "未成年人";
+      }
+   }
+}
+

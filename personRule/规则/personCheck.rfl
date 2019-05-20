@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.ruleflow:RuleFlow xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.ruleflow="http://ilog.rules.studio/model/ruleflow.ecore">
+  <name>personCheck</name>
+  <uuid>51c5ddc0-79c9-4f2b-aa76-d573ba6e9929</uuid>
+  <locale>zh_CN</locale>
+  <categories>any</categories>
+  <rfModel>
+<Ruleflow xmlns="http://schemas.ilog.com/Rules/7.0/Ruleflow">
+  <Body>
+    <TaskList>
+      <StartTask Identifier="task_0"/>
+      <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="年龄检查" Ordering="Default">
+        <RuleList>
+          <Rule Uuid="48e14d00-7a8c-4901-b42f-6871339af411"/>
+        </RuleList>
+      </RuleTask>
+      <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="性别检查决策表" Ordering="Default">
+        <FinalActions/>
+        <RuleList>
+          <Rule Uuid="abe0a72f-15bc-4961-9a11-75a727d8cd7c"/>
+        </RuleList>
+      </RuleTask>
+      <StopTask Identifier="task_1"/>
+    </TaskList>
+    <NodeList>
+      <TaskNode Identifier="node_0" Task="task_0"/>
+      <TaskNode Identifier="node_1" Task="task_1"/>
+      <TaskNode Identifier="node_2" Task="年龄检查"/>
+      <TaskNode Identifier="node_8" Task="性别检查决策表"/>
+    </NodeList>
+    <TransitionList>
+      <Transition Identifier="transition_0" Source="node_0" Target="node_2"/>
+      <Transition Identifier="transition_1" Source="node_2" Target="node_1">
+        <Conditions Language="bal"><![CDATA['人员' 的年龄 小于 18]]></Conditions>
+      </Transition>
+      <Transition Identifier="transition_9" Source="node_2" Target="node_8"/>
+      <Transition Identifier="transition_10" Source="node_8" Target="node_1"/>
+    </TransitionList>
+  </Body>
+  <Resources>
+    <ResourceSet Locale="zh_CN">
+      <Data Name="node_8#height">40.0</Data>
+      <Data Name="transition_1#label">年龄判断</Data>
+      <Data Name="node_0#height">21.0</Data>
+      <Data Name="node_2#height">40.0</Data>
+      <Data Name="node_2#name">node_2</Data>
+      <Data Name="node_8#x">-27.0</Data>
+      <Data Name="node_8#y">173.0</Data>
+      <Data Name="node_2#width">102.0</Data>
+      <Data Name="node_1#name">node_2</Data>
+      <Data Name="node_0#y">10.5</Data>
+      <Data Name="node_0#x">89.0</Data>
+      <Data Name="node_8#name">node_8</Data>
+      <Data Name="node_1#x">89.0</Data>
+      <Data Name="node_1#width">21.999994</Data>
+      <Data Name="node_1#y">275.40234</Data>
+      <Data Name="node_8#width">126.0</Data>
+      <Data Name="node_1#height">22.00001</Data>
+      <Data Name="node_2#x">89.0</Data>
+      <Data Name="node_2#y">91.0</Data>
+      <Data Name="node_0#width">21.0</Data>
+      <Data Name="node_0#name">node_0</Data>
+    </ResourceSet>
+  </Resources>
+  <Properties/>
+</Ruleflow></rfModel>
+</ilog.rules.studio.model.ruleflow:RuleFlow>

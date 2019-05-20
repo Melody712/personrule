@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:VariableSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>人员变量集</name>
+  <uuid>a1ea3744-ea51-49f2-8b8f-779b830414e6</uuid>
+  <variables name="person" type="bean.Person" initialValue="" verbalization="人员"/>
+</ilog.rules.studio.model.base:VariableSet>

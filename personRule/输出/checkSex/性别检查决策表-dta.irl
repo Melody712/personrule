@@ -1,0 +1,59 @@
+// begin DT 性别检查决策表
+// -- begin rule '性别检查决策表 0'
+package checkSex {
+   use person;
+   rule 性别检查决策表_0 {
+      property ilog.rules.business_name = "性别检查决策表 1";
+      property ilog.rules.dt = "checkSex.性别检查决策表";
+      property ilog.rules.group = "checkSex.性别检查决策表";
+      property ilog.rules.package_name = "checkSex";
+      property status = "new";
+      when {
+         bean.Person() from person;
+         evaluate ((((person.sex.equals("male")))));
+      } then {
+         person.msg = "成年男性";
+      }
+   }
+}
+
+// -- end rule '性别检查决策表 0'
+// -- begin rule '性别检查决策表 1'
+package checkSex {
+   use person;
+   rule 性别检查决策表_1 {
+      property ilog.rules.business_name = "性别检查决策表 2";
+      property ilog.rules.dt = "checkSex.性别检查决策表";
+      property ilog.rules.group = "checkSex.性别检查决策表";
+      property ilog.rules.package_name = "checkSex";
+      property status = "new";
+      when {
+         bean.Person() from person;
+         evaluate ((((person.sex.equals("female")))));
+      } then {
+         person.msg = "成年女性";
+      }
+   }
+}
+
+// -- end rule '性别检查决策表 1'
+// -- begin rule '性别检查决策表 2'
+package checkSex {
+   use person;
+   rule 性别检查决策表_2 {
+      property ilog.rules.business_name = "性别检查决策表 3";
+      property ilog.rules.dt = "checkSex.性别检查决策表";
+      property ilog.rules.group = "checkSex.性别检查决策表";
+      property ilog.rules.package_name = "checkSex";
+      property status = "new";
+      when {
+         bean.Person() from person;
+         evaluate (((!((((person.sex.equals("male"))) || ((person.sex.equals("female"))))))));
+      } then {
+         person.msg = "未知性别成年人 ";
+      }
+   }
+}
+
+// -- end rule '性别检查决策表 2'
+// end DT 性别检查决策表

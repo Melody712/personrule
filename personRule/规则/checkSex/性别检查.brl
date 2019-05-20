@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>性别检查</name>
+  <uuid>87e1bfe7-0b37-451b-851b-448d7d25eca1</uuid>
+  <locale>zh_CN</locale>
+  <definition><![CDATA[如果
+	'人员' 的性别 是 "male"  
+	
+那么
+	设置'人员'  的当前信息为"成年男性"  ; 
+	
+否则
+	设置'人员'  的当前信息为"成年女性"  ; ]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

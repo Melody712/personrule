@@ -1,0 +1,17 @@
+package checkSex {
+   use person;
+   rule 性别检查 {
+      property ilog.rules.business_name = "性别检查";
+      property ilog.rules.package_name = "checkSex";
+      property status = "new";
+      when {
+         bean.Person() from person;
+         evaluate ((person.sex.equals("male")));
+      } then {
+         person.msg = "成年男性";
+      } else {
+         person.msg = "成年女性";
+      }
+   }
+}
+

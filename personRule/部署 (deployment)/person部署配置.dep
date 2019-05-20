@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" ruleAppName="personApp" managingXom="true">
+  <name>person部署配置</name>
+  <uuid>446aed2b-ca4d-466d-b3d6-89641e069e4e</uuid>
+  <targets label="本机RES"/>
+  <operations operationName="person决策操作">
+    <operation href="person决策操作.dop#c1c9bcc6-b301-4012-a158-deb9d1de9a51"/>
+    <properties key="ruleset.version">
+      <value><![CDATA[1.0]]></value>
+    </properties>
+  </operations>
+  <versionPolicies label="增大次要版本号" ruleset="INCREMENT_MINOR" default="true" recurrent="true">
+    <description><![CDATA[更新每个规则集的次要版本。使新版本可用，但保留先前的版本。]]></description>
+  </versionPolicies>
+  <versionPolicies label="使用基础版本号" recurrent="true">
+    <description><![CDATA[使用部署配置中提供的编号。用该发布替换每个规则集的最新版本。用于 hot fix 或开发。]]></description>
+  </versionPolicies>
+  <versionPolicies label="用户可定义版本号" ruleset="MANUAL" recurrent="true">
+    <description><![CDATA[使您能够输入您自己的版本号。用于较早发布的 hot fix 或更新。]]></description>
+  </versionPolicies>
+</com.ibm.rules.studio.model.decisionservice:Deployment>

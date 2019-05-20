@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>年龄检查</name>
+  <uuid>48e14d00-7a8c-4901-b42f-6871339af411</uuid>
+  <locale>zh_CN</locale>
+  <definition><![CDATA[如果
+	'人员' 的年龄 小于 18
+	
+那么
+	设置'人员'  的当前信息为"未成年人"  ;   ]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

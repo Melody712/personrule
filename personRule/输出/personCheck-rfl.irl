@@ -1,0 +1,38 @@
+use person;
+
+flowtask personCheck {
+  property mainflowtask = false;
+  property ilog.rules.business_name = "personCheck";
+  property ilog.rules.package_name = "";
+  body {
+    personCheck#年龄检查;
+    if (person.age < 18) {
+    }
+    else {
+      personCheck#性别检查决策表;
+    }
+  }
+};
+
+ruletask personCheck#年龄检查 {
+  property ilog.rules.business_name = "personCheck>年龄检查";
+  property ilog.rules.package_name = "";
+  algorithm = sequential;
+  property ilog.rules.engine.sequential.fastpath = true;
+  ordering = sorted;
+  body {
+    checkAge.年龄检查
+  }
+};
+
+ruletask personCheck#性别检查决策表 {
+  property ilog.rules.business_name = "personCheck>性别检查决策表";
+  property ilog.rules.package_name = "";
+  algorithm = sequential;
+  property ilog.rules.engine.sequential.fastpath = true;
+  ordering = sorted;
+  body {
+    group("checkSex.性别检查决策表")
+  }
+};
+

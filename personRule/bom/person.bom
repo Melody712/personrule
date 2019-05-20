@@ -1,0 +1,15 @@
+
+property loadGetterSetterAsProperties "true"
+property origin "xom:/personRule//person-xom"
+property uuid "d89d8845-e281-4b2c-8040-23bcf8d19c9e"
+package bean;
+
+
+public class Person
+{
+    public int age;
+    public string msg;
+    public string sex;
+    public Person();
+}
+

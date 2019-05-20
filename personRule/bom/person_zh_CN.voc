@@ -1,0 +1,11 @@
+# Vocabulary Properties
+uuid = c6adddc0-53f4-4054-8d23-70500181b9d6
+
+# bean.Person
+bean.Person#concept.label = 人员
+bean.Person.age#phrase.action = 设置{this}的当前 年龄为{年龄}
+bean.Person.age#phrase.navigation = {this} 的{年龄}
+bean.Person.msg#phrase.action = 设置{this}的当前 信息为{信息}
+bean.Person.msg#phrase.navigation = {this} 的{信息}
+bean.Person.sex#phrase.action = 设置{this}的当前 性别为{性别}
+bean.Person.sex#phrase.navigation = {this} 的{性别}
