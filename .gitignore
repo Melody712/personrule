@@ -25,7 +25,7 @@ nbdist/
 bin/
 
 ### 规则项目 ###
-*/xom-libraries
+xom-libraries
 *.html
 \346\212\245\345\221\212/
 报告/
