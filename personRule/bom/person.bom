@@ -5,11 +5,24 @@ property uuid "d89d8845-e281-4b2c-8040-23bcf8d19c9e"
 package bean;
 
 
+public class AddBean
+{
+    public AddBean();
+}
+
 public class Person
 {
     public int age;
     public string msg;
     public string sex;
     public Person();
+    public static void main(java.lang.String[] arg);
+}
+
+public class Result
+{
+    public string info;
+    public Result(string arg);
+    public Result();
 }
 
