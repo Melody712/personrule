@@ -6,7 +6,7 @@ public class Person {
 
 	private int age = -1;
 	private String sex = "";
-	private String msg = "aa";
+	private String bbb = "aa";
 	public int getAge() {
 		return age;
 	}
