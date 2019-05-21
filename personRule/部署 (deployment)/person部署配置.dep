@@ -2,7 +2,6 @@
 <com.ibm.rules.studio.model.decisionservice:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" ruleAppName="personApp" managingXom="true">
   <name>person部署配置</name>
   <uuid>446aed2b-ca4d-466d-b3d6-89641e069e4e</uuid>
-  <targets label="本机RES"/>
   <operations operationName="person决策操作">
     <operation href="person决策操作.dop#c1c9bcc6-b301-4012-a158-deb9d1de9a51"/>
     <properties key="ruleset.version">
